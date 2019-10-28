@@ -1,7 +1,7 @@
 # vim: set ft=dockerfile:
 FROM alpine:latest
 # Author with no obligation to maintain
-MAINTAINER Paul Tötterman <paul.totterman@iki.fi>
+LABEL author="Paul Tötterman <paul.totterman@iki.fi>"
 
 RUN apk add --no-cache tftp-hpa \
     && mkdir -p /srv/tftproot \
